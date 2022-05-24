@@ -59,4 +59,4 @@ class NivelController {
 
 }
 
-module.exports = NivelController
+module.exports = NivelController;

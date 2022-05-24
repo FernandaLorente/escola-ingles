@@ -129,7 +129,7 @@ class PessoaController {
   }
 
   static async deletarMatricula(req, res) {
-    const { estudanteId, matriculaId } = req.params;
+    const { matriculaId } = req.params;
     try {
       await database.matriculas.destroy({ where: { id: Number(matriculaId) }});
 
