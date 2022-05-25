@@ -9,12 +9,14 @@ router.get('/pessoas/:id', PessoaController.listarPorId);
 router.post('/pessoas', PessoaController.criarPessoa);
 router.put('/pessoas/:id', PessoaController.atualizarPessoa);
 router.delete('/pessoas/:id', PessoaController.deletarPessoa);
+router.post('/pessoas/:id/restaura', PessoaController.retaurarPessoa);
 
 //Matricula
 router.get('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.listarPorMatricula);
 router.post('/pessoas/:estudanteId/matricula', PessoaController.criarMatricula);
 router.put('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.atualizarMatriculas);
 router.delete('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.deletarMatricula);
+router.post('/pessoas/:estudanteId/matricula/:matriculaId/restaura', PessoaController.restaurarMatricula)
 
 
 
