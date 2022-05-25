@@ -3,7 +3,8 @@ const PessoaController = require('../controllers/PessoaController');
 
 const router = Router();
 
-router.get('/pessoas', PessoaController.listarTodos);
+router.get('/pessoas', PessoaController.listarPessoasAtivas);
+router.get('/pessoas/todos', PessoaController.listarTodos);// usando scope
 //             esses : indica que recebera um parametro
 router.get('/pessoas/:id', PessoaController.listarPorId);
 router.post('/pessoas', PessoaController.criarPessoa);
