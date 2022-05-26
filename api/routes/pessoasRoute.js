@@ -18,6 +18,7 @@ router.get('/pessoas/:estudanteId/matricula', PessoaController.matriculasPorPess
 router.get('/pessoas/matricula/:turmaId/confirmadas', PessoaController.matriculasPorTurma);
 router.get('/pessoas/matricula/lotada', PessoaController.turmasLotadas);
 router.post('/pessoas/:estudanteId/matricula', PessoaController.criarMatricula);
+router.post('/pessoas/:estudanteId/cancela', PessoaController.cancelarPessoa);
 router.put('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.atualizarMatriculas);
 router.delete('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.deletarMatricula);
 router.post('/pessoas/:estudanteId/matricula/:matriculaId/restaura', PessoaController.restaurarMatricula);
